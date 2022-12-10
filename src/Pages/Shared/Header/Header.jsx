@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../Assets/Images/logo.png";
 
 const Header = () => {
   const navBarItems = (
@@ -49,8 +50,10 @@ const Header = () => {
             {navBarItems}
           </ul>
         </div>
-        <Link to="/home" className="w-48">
-          Shamsul Arifin
+        <Link to="/home">
+          <div className="w-16">
+            <img src={logo} alt="" />
+          </div>
         </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
