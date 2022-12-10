@@ -16,17 +16,17 @@ const Skills = () => {
       <h1 className="text-5xl font-extrabold mt-14 text-center">
         Technologies That I am using
       </h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5  gap-2 mt-10 ">
-        <img className="w-28" src={html} alt="" />
-        <img className="w-28" src={css} alt="" />
-        <img className="w-28" src={js} alt="" />
-        <img className="w-28" src={react} alt="" />
-        <img className="w-28" src={node} alt="" />
-        <img className="w-28" src={mongo} alt="" />
-        <img className="w-28" src={firebase} alt="" />
-        <img className="w-28" src={tailwind} alt="" />
-        <img className="w-28" src={bootstrap} alt="" />
-        <img className="w-24" src={figma} alt="" />
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-10 gap-10 p-10">
+        <img className="w-14 md:w-24" src={html} alt="" />
+        <img className="w-14 md:w-24" src={css} alt="" />
+        <img className="w-14 md:w-24" src={js} alt="" />
+        <img className="w-14 md:w-24" src={react} alt="" />
+        <img className="w-14 md:w-24" src={node} alt="" />
+        <img className="w-14 md:w-24" src={mongo} alt="" />
+        <img className="w-14 md:w-24" src={firebase} alt="" />
+        <img className="w-14 md:w-24" src={tailwind} alt="" />
+        <img className="w-14 md:w-24" src={bootstrap} alt="" />
+        <img className="w-14 md:w-20" src={figma} alt="" />
       </div>
     </section>
   );

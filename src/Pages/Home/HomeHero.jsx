@@ -25,26 +25,23 @@ const HomeHero = () => {
             <img src={HeroImage} alt="hero_image" />
           </div>
         </div>
-        <div className="w-1/2">
-          <h1 className="text-5xl font-bold">SHAMSUL ARIFIN</h1>
+        <div className="md:w-1/2">
+          <h1 className="font-bold text-neutral py-2">Front-End Developer</h1>
+          <h1 className="text-5xl font-bold ">SHAMSUL ARIFIN</h1>
           <p className="py-6">
             I am a fresh graduate of Computer Science, with a major in Software
             Engineering. Seeking a position as a Web Developing where I can
             utilize my exceptional expertise and knowledge in designing and
-            development. Also seeking a position where I can use my strong
-            analytical problem-solving skills to effectively contribute to an IT
-            service industry and help the organization grow further. Besides
-            that, I have the ability to handle multiple tasks at one time while
-            still achieving the goals of the company, excellent communication &
-            interpersonal relations, and am committed to maintaining the
-            high-quality standards required in this competitive market.
+            development.I am an enthusiastic web developer that is quick to pick
+            things up and who works well in a team. I also have a strong desire
+            to advance professionally and always improve my abilities.
           </p>
 
           <button
             onClick={onButtonClick}
             className="btn rounded-2xl btn-outline btn-primary btn-sm"
           >
-            RESUME
+            DOWNLOAD RESUME
           </button>
           <button className="btn rounded-2xl btn-outline btn-neutral btn-sm ml-3">
             contact
