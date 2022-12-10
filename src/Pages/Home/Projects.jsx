@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import CarGurus from "../../Assets/Projects/CarGurus.png";
 import CreativeLive from "../../Assets/Projects/Creativelive.png";
 import LensExpert from "../../Assets/Projects/Lensexpert.png";
@@ -7,6 +6,7 @@ import LensExpert from "../../Assets/Projects/Lensexpert.png";
 const Projects = () => {
   const projects = [
     {
+      id: 1,
       name: "Car Gurus",
       description: "A car selling website",
       img: CarGurus,
@@ -20,6 +20,7 @@ const Projects = () => {
         "Buyer can buy a car and seller can sell a car.Admin can add a new car, delete a car and make a new admin.",
     },
     {
+      id: 2,
       name: "Lens Expert",
       description: "A Photography Service website",
       img: LensExpert,
@@ -34,6 +35,7 @@ const Projects = () => {
         "Users are able to place orders, check the order list they have created, and provide feedback on services.",
     },
     {
+      id: 3,
       name: "Creative Live",
       description: "An Educational Services Website",
       img: CreativeLive,
@@ -58,7 +60,7 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {projects.map((project) => (
-          <div className="card w-96 shadow-2xl">
+          <div key={project.id} className="card w-96 shadow-2xl">
             <figure>
               <img src={project.img} alt="Project" />
             </figure>
@@ -75,21 +77,30 @@ const Projects = () => {
               </ul>
 
               <div className="card-actions justify-end">
-                <Link className="badge badge-outline" to={project.liveLink}>
-                  Live Link
-                </Link>
-                <Link
+                <a
                   className="badge badge-outline"
-                  to={project.clientSideLink}
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Link
+                </a>
+                <a
+                  className="badge badge-outline"
+                  href={project.clientSideLink}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Client Side
-                </Link>
-                <Link
+                </a>
+                <a
                   className="badge badge-outline"
-                  to={project.serverSideLink}
+                  href={project.serverSideLink}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Server Side Link
-                </Link>
+                </a>
               </div>
             </div>
           </div>
