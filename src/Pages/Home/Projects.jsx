@@ -4,7 +4,7 @@ import Project from "./Project";
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    fetch("data.json")
+    fetch("https://portfolio-server-mu-ebon.vercel.app/projects")
       .then((response) => response.json())
       .then((data) => setProjects(data));
   }, []);

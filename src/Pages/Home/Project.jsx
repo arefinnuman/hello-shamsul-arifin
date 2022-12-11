@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Project = (project) => {
+  const id = project.project.id;
   console.log(project.project);
   return (
     <div className="card shadow-2xl">
@@ -12,9 +14,7 @@ const Project = (project) => {
           {project.project.name}
           <div className="badge badge-secondary">NEW</div>
         </h2>
-        <p className="font-bold">{project.description}</p>
-
-        <div className="card-actions justify-center">
+        <div className="card-actions  my-4">
           <a
             className="badge badge-outline"
             href={project.project.liveLink}
@@ -39,6 +39,10 @@ const Project = (project) => {
           >
             Server Side Link
           </a>
+          <br />
+          <Link to={`/projects/${id}`} className="link-primary link-hover mt-2">
+            View Details
+          </Link>
         </div>
       </div>
     </div>
