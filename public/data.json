@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Car Gurus",
+    "description": "A Car Service website",
+    "about": "CarGurus is an online car-shopping platform that allows dealers and individuals to post new- and used-car listings. The company was founded in 2006 and acquired Auto list, another car-shopping platform, in 2020. According to CarGurus, more than 5 million listings are on its platform.\r\n",
+    "duration": "7-9 days",
+    "img": "https://i.ibb.co/89P0p50/CarGurus.png",
+    "image2": "https://i.ibb.co/mXK7G9b/Screenshot-1.png",
+    "image3": "https://i.ibb.co/tZ0FmJd/Screenshot-2.png",
+    "image4": "https://i.ibb.co/TvRGDxg/Screenshot-3.png",
+    "liveLink": "https://car-gurus-d0368.web.app/",
+    "clientSideLink": "https://github.com/arefinnuman/car-gurus-client-side",
+    "serverSideLink": "https://github.com/arefinnuman/car-gurus-server-side",
+    "features1": "Features like Admin, Buyer & Seller Dashboard.",
+    "features2": "Users can create accounts and log in to this website using their Google credentials.",
+    "features3": "Buyer can buy a car and seller can sell a car.Admin can add a new car, delete a car and make a new admin."
+  },
+  {
+    "id": 2,
+    "name": "Lens Expert",
+    "description": "A Photography Service website",
+    "about": "I approach photography with a romantic, impressionist sensibility. Over the past decade, I have had the pleasure of documenting some of the most iconic and exclusive celebrations for discerning patrons in over twenty countries and six continents. I have been named one of the top film photographers in the world and featured in numerous prestigious publications such as Harpers Bazaar, Elle, Town & Country and Martha Stewart Weddings.\r\n",
+    "duration": "5-7 days",
+    "img": "https://i.ibb.co/644CLr1/Lensexpert.png",
+    "image2": "https://i.ibb.co/2Mw3bcH/Screenshot-6.png",
+    "image3": "https://i.ibb.co/1sy6fbK/Screenshot-5.png",
+    "image4": "https://i.ibb.co/N1BXzBb/Screenshot-4.png",
+    "liveLink": "https://client-side-446e4.web.app/",
+    "clientSideLink": "https://github.com/arefinnuman/lens-expert-client-side",
+    "serverSideLink": "https://github.com/arefinnuman/lens-expert-server-side",
+    "features1": "It is a website specializing in photographic services, and it offers a variety of photography services.",
+    "features2": "Users can create accounts and log in to this website using their Google credentials.",
+    "features3": "Users are able to place orders, check the order list they have created, and provide feedback on services."
+  },
+  {
+    "id": 3,
+    "name": "Creative Live",
+    "description": "An Educational Services Website",
+    "about": "CCreativeLive offers some of the best courses for creatives. It is a great option for young artists and designers that want to learn more or develop already existing skills. It is inexpensive and together with all the free live classes.\r\n",
+    "duration": "3-6 days",
+    "img": "https://i.ibb.co/1Z7Y1Vg/Creativelive.png",
+    "image2": "https://i.ibb.co/JzvJM3V/Screenshot-7.png",
+    "image3": "https://i.ibb.co/F683jvW/Screenshot-9.png",
+    "image4": "https://i.ibb.co/FszGFR4/Screenshot-8.png",
+    "liveLink": "https://creative-live-55922.web.app/",
+    "clientSideLink": "https://github.com/arefinnuman/creative-live-client-side",
+    "serverSideLink": "https://github.com/arefinnuman/creative-live-server-side",
+    "features1": "It is a website specializing in educational services, and it offers a variety of educational services.",
+    "features2": "Users can create accounts and log in to this website using their Google credentials.",
+    "features3": "Users are able to place orders, check the order list they have created, and provide feedback on services."
+  }
+]

@@ -4,7 +4,7 @@ import HeroImage from "../../Assets/Images/HeroImage.jpg";
 
 const Education = () => {
   return (
-    <section id="about">
+    <section id="about" className="my-5">
       <div className="flex justify-center items-center my-5">
         <div className="max-w-md p-8 sm:flex sm:space-x-6 ">
           <div className="flex-shrink-0 w-full mb-6 h-44 sm:h-32 sm:w-32 sm:mb-0">

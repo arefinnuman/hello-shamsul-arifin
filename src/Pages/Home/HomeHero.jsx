@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import HeroImage from "../../Assets/Images/HeroImage.jpg";
 
 const HomeHero = () => {
@@ -43,9 +44,13 @@ const HomeHero = () => {
           >
             DOWNLOAD RESUME
           </button>
-          <button className="btn rounded-2xl btn-outline btn-neutral btn-sm ml-3">
+          <HashLink
+            className="btn rounded-2xl btn-outline btn-neutral btn-sm ml-3"
+            smooth
+            to="/#contact"
+          >
             contact
-          </button>
+          </HashLink>
         </div>
       </div>
     </section>
