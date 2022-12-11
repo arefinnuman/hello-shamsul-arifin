@@ -1,7 +1,6 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import { toast } from "react-hot-toast";
-import background from "../../Assets/Images/Background.png";
 
 const HomeForm = () => {
   const form = useRef();
@@ -27,47 +26,91 @@ const HomeForm = () => {
     e.target.reset();
   };
   return (
-    <section
-      className="flex justify-center text-center lg:mt-8 py-24 mt-20"
-      style={{ background: `url(${background})` }}
-      id="contact"
-    >
-      <div>
-        <h3 className="text-2xl text">Write me a message</h3>
-        <form ref={form} onSubmit={sendEmail} className="py-5">
-          <input
-            className="lg:w-[450px] h-[48px] rounded-xl pl-4 mt-6 input input-bordered "
-            type="name"
-            name="user_name"
-            id=""
-            placeholder="Name"
-          />
-          <br />
-          <input
-            className="lg:w-[450px] h-[48px] rounded-xl pl-4 mt-5 input input-bordered "
-            type="email"
-            name="user_email"
-            id=""
-            placeholder="Email Address"
-          />
-          <br />
-          <input
-            className="lg:w-[450px] h-[48px] rounded-xl pl-4 mt-5 input input-bordered "
-            type="text"
-            name="user_subject"
-            id=""
-            placeholder="Subject"
-          />
-          <br />
-          <textarea
-            className="lg:w-[450px] h-[140px] rounded-xl pl-4 my-5 input input-bordered  "
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your message"
-          ></textarea>
-          <br />
+    <section className="py-6 ">
+      <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+        <div className="py-6 md:py-0 md:px-6">
+          <h1 className="text-4xl font-bold">Get in touch</h1>
+          <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+          <div className="space-y-4">
+            <p className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <span>Salimuddin Market, Mirpur-1, Dhaka</span>
+            </p>
+            <p className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span>01825333535</span>
+            </p>
+            <p className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+              </svg>
+              <span>arifin.shamsul.99@gmail.com</span>
+            </p>
+          </div>
+        </div>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
+        >
+          <label className="block">
+            <span className="mb-1">Full name</span>
+            <input
+              required="required"
+              type="name"
+              name="user_name"
+              id=""
+              placeholder="Leroy Jenkins"
+              className="block w-full rounded-md input input-bordered  focus:ring focus:ring-opacity-75 ring-primary"
+            />
+          </label>
+          <label className="block">
+            <span className="mb-1">Email address</span>
+            <input
+              type="email"
+              name="user_email"
+              id=""
+              required
+              placeholder="leroy@jenkins.com"
+              className="block w-full rounded-md input input-bordered   focus:ring focus:ring-opacity-75 ring-primary"
+            />
+          </label>
+          <label className="block">
+            <span className="mb-1">Message</span>
+            <textarea
+              name="message"
+              required
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+              className=" lg:w-[500px] h-[140px] p-4 my-5  block w-full  rounded-md input input-bordered focus:ring focus:ring-opacity-75 ring-primary"
+            ></textarea>
+          </label>
           <input
             className="btn btn-outline  btn-primary btn-sm rounded-2xl "
             type="submit"

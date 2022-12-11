@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Project = (project) => {
   const id = project.project.id;
-  console.log(project.project);
+
   return (
     <div className="card shadow-2xl">
       <figure>

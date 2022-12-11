@@ -17,7 +17,6 @@ const ProjectDetails = () => {
     about,
     description,
   } = project;
-  console.log();
   return (
     <div>
       <section className="p-4 lg:p-8">

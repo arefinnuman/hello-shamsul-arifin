@@ -1,6 +1,5 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import HeroImage from "../../Assets/Images/HeroImage.jpg";
 
 const HomeHero = () => {
   const onButtonClick = () => {
@@ -21,9 +20,12 @@ const HomeHero = () => {
   return (
     <section className="hero md:p-10">
       <div className="hero-content flex-col lg:flex-row">
-        <div className="avatar w-1/2">
-          <div className="rounded-full ring ring-white ">
-            <img src={HeroImage} alt="hero_image" />
+        <div className="avatar w-1/2 flex justify-center items-center">
+          <div className="rounded-full ring shadow-2xl w-3/4">
+            <img
+              src="https://i.ibb.co/Q7Bm8fy/IMG-0439-1.jpg"
+              alt="hero_image"
+            />
           </div>
         </div>
         <div className="md:w-1/2">
