@@ -12,23 +12,65 @@ import tailwind from "../../Assets/Skills/tailwind.png";
 
 const Skills = () => {
   return (
-    <section>
-      <h1 className="text-5xl font-extrabold mt-14 text-center">
-        Technologies That I am using
-      </h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-10 gap-10 p-10">
-        <img className="w-14 md:w-24" src={html} alt="" />
-        <img className="w-14 md:w-24" src={css} alt="" />
-        <img className="w-14 md:w-24" src={js} alt="" />
-        <img className="w-14 md:w-24" src={react} alt="" />
-        <img className="w-14 md:w-24" src={node} alt="" />
-        <img className="w-14 md:w-24" src={mongo} alt="" />
-        <img className="w-14 md:w-24" src={firebase} alt="" />
-        <img className="w-14 md:w-24" src={tailwind} alt="" />
-        <img className="w-14 md:w-24" src={bootstrap} alt="" />
-        <img className="w-14 md:w-20" src={figma} alt="" />
-      </div>
-    </section>
+    <>
+      <section className="">
+        <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
+          <h2 className="text-3xl font-bold">Fully compatible with</h2>
+          <div className="flex flex-wrap justify-center lg:justify-between">
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={html}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={css}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={js}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={react}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={node}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={mongo}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={firebase}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={tailwind}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={bootstrap}
+              alt=""
+            />
+            <img
+              className="h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0"
+              src={figma}
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

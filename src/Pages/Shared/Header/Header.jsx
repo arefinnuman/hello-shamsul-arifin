@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../../Assets/Images/logo.png";
 
 const Header = () => {
@@ -8,15 +9,23 @@ const Header = () => {
       <li>
         <Link to="/home">Home</Link>
       </li>
-
+      <li>
+        <HashLink smooth to="/#projects">
+          Projects
+        </HashLink>
+      </li>
       <li>
         <Link to="/blogs">Blogs</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <HashLink smooth to="/#about">
+          About
+        </HashLink>
       </li>
       <li>
-        <Link to="/contact">Contact Me</Link>
+        <HashLink smooth to="/#contact">
+          Contact Me
+        </HashLink>
       </li>
     </React.Fragment>
   );

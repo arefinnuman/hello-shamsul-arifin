@@ -30,6 +30,7 @@ const HomeForm = () => {
     <section
       className="flex justify-center text-center lg:mt-8 py-24 mt-20"
       style={{ background: `url(${background})` }}
+      id="contact"
     >
       <div>
         <h3 className="text-2xl text">Write me a message</h3>
