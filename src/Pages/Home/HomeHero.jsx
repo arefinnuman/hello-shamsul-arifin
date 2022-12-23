@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
+import { Typewriter } from "react-simple-typewriter";
 
 const HomeHero = () => {
   const onButtonClick = () => {
@@ -29,7 +30,31 @@ const HomeHero = () => {
           </div>
         </div>
         <div className="md:w-1/2">
-          <h1 className="font-bold text-neutral py-2">Front-End Developer</h1>
+          <h1
+            style={{
+              paddingTop: "5rem",
+              margin: "auto 0",
+              fontWeight: "normal",
+            }}
+          >
+            <span className="font-bold text-neutral py-2">
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={[
+                  "Front End Developer",
+                  "React Developer",
+                  "Web Developer",
+                  "MERN Stack Developer",
+                ]}
+                loop={999}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
+          </h1>
           <h1 className="text-5xl font-bold ">SHAMSUL ARIFIN</h1>
           <p className="py-6">
             I am a fresh graduate of Computer Science, with a major in Software
