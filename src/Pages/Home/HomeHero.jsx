@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { HashLink } from "react-router-hash-link";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -23,9 +24,10 @@ const HomeHero = () => {
       <div className="hero-content flex-col lg:flex-row">
         <div className="avatar w-1/2 flex justify-center items-center">
           <div className="rounded-full ring shadow-2xl w-3/4">
-            <img
+            <LazyLoadImage
               src="https://i.ibb.co/Q7Bm8fy/IMG-0439-1.jpg"
               alt="hero_image"
+              ke
             />
           </div>
         </div>

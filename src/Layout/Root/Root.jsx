@@ -5,7 +5,16 @@ import Header from "../../Pages/Shared/Header/Header";
 
 const Root = () => {
   return (
-    <div>
+    <div
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <Header />
       <section className="max-w-[1440px] mx-auto">
         <Outlet />
