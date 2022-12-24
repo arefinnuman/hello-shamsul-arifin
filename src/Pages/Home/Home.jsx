@@ -1,4 +1,5 @@
 import React from "react";
+import ParticlesApp from "../../Components/Particles/ParticlesApp";
 import Education from "./Education";
 import HomeForm from "./HomeForm";
 import HomeHero from "./HomeHero";
@@ -13,6 +14,7 @@ const Home = () => {
       <Projects />
       <Education />
       <HomeForm />
+      <ParticlesApp />
     </>
   );
 };
