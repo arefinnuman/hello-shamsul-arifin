@@ -27,53 +27,43 @@ const ParticlesApp = () => {
           },
           particles: {
             number: {
-              value: 10,
-            },
-            color: {
-              value: "",
-            },
-            shape: {
-              type: "star",
-              options: {
-                sides: 5,
+              value: 40,
+              density: {
+                enable: true,
               },
             },
+            color: {
+              value: "#000000",
+            },
+            shape: {
+              type: "circle",
+            },
             opacity: {
-              value: 0.8,
-              random: false,
+              value: 0.5,
+              random: true,
               anim: {
-                enable: false,
-                speed: 1,
+                enable: true,
+                speed: 3,
                 opacity_min: 0.1,
                 sync: false,
               },
             },
             size: {
-              value: 4,
-              random: false,
-              anim: {
-                enable: false,
-                speed: 40,
-                size_min: 0.1,
-                sync: false,
-              },
-            },
-            rotate: {
-              value: 0,
+              value: 5,
               random: true,
-              direction: "clockwise",
-              animation: {
+              anim: {
                 enable: true,
-                speed: 5,
+                speed: 20,
+                size_min: 0.1,
                 sync: false,
               },
             },
             line_linked: {
               enable: true,
-              distance: 600,
+              distance: 150,
               color: "#000000",
               opacity: 0.4,
-              width: 2,
+              width: 1,
             },
             move: {
               enable: true,
@@ -92,12 +82,17 @@ const ParticlesApp = () => {
           interactivity: {
             events: {
               onhover: {
-                enable: true,
-                mode: ["grab"],
+                enable: false,
+                mode: "repulse",
               },
               onclick: {
                 enable: false,
-                mode: "bubble",
+                mode: "push",
+              },
+              ondiv: {
+                enable: true,
+                elementId: "repulse-div",
+                mode: "repulse",
               },
               resize: true,
             },
@@ -112,7 +107,7 @@ const ParticlesApp = () => {
                 distance: 400,
                 size: 40,
                 duration: 2,
-                opacity: 8,
+                opacity: 0.8,
                 speed: 3,
               },
               repulse: {
